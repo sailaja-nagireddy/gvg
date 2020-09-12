@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'gvg'
   s.version     = '0.0.1'
-  s.executables << 'gvg'
+  s.executables << ['gvg', 'agnot']
   s.date        = '2020-09-12'
   s.summary     = "Generic VoiceXML Generator"
   s.description = "A voicexml generator based on state machine."

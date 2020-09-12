@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'gvg'
+
+agnot = Gvg::Agnot.new
+parser = Gvg::Parser.new
+automaton = parser.parse
+
+agnot.start
+states = automaton['states']
+for state in states
+  audio = state['audio']
+  agnot.say(audio['source'], audio['text'])
+end
+agnot.stop
