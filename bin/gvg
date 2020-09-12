@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'gvg'
+puts Gvg::Hello.hi(ARGV[0])
