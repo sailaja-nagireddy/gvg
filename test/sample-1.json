@@ -1,0 +1,21 @@
+{
+  "id": "1",
+  "name": "Sample 1",
+  "type": "sample",
+  "description": "A simple travel planner.",
+  "version": "1.0",
+  "states": [
+    {
+      "id": "1",
+      "sequence": "1",
+      "name": "State 1",
+      "type": "say",
+      "description": "A test state.",
+      "audio": {
+        "source": "http://www.adline.com/mobile?code=12s4",
+        "text": "Welcome to Travel Planner!"
+      }
+    }
+  ]
+}
+

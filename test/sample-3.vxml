@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+<menu>
+  <prompt>
+    Say one of: <enumerate/>
+  </prompt>
+  <choice next="http://www.sports.example/start.vxml">
+     Sports
+  </choice>
+  <choice next="http://www.weather.example/intro.vxml">
+     Weather
+  </choice>
+  <choice next="http://www.news.example/news.vxml">
+     News
+  </choice>
+  <noinput>Please say one of <enumerate/></noinput>
+</menu>
+</vxml>
