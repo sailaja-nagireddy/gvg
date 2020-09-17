@@ -1,0 +1,21 @@
+{
+  "id": "1",
+  "name": "Not Found",
+  "type": "error",
+  "description": "A state machine for 404 resource not found.",
+  "version": "1.0",
+  "states": [
+    {
+      "id": "1",
+      "sequence": "1",
+      "name": "Not Found",
+      "type": "say",
+      "description": "A state to say that the resource is not found.",
+      "audio": {
+        "source": "/media/audio?message=source-not-found&voice=default",
+        "text": "Requested resource not found."
+      }
+    }
+  ]
+}
+

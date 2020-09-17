@@ -1,16 +1,16 @@
 {
   "id": "1",
-  "name": "Sample 1",
+  "name": "Travel Planner",
   "type": "sample",
-  "description": "A simple travel planner.",
+  "description": "A simple sample travel planner.",
   "version": "1.0",
   "states": [
     {
       "id": "1",
       "sequence": "1",
-      "name": "State 1",
+      "name": "Welcome Message",
       "type": "say",
-      "description": "A test state.",
+      "description": "A state to say welcome message.",
       "audio": {
         "source": "http://www.adline.com/mobile?code=12s4",
         "text": "Welcome to Travel Planner!"

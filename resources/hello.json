@@ -1,0 +1,21 @@
+{
+  "id": "1",
+  "name": "Hello World",
+  "type": "hello",
+  "description": "An introductory hello world.",
+  "version": "1.0",
+  "states": [
+    {
+      "id": "1",
+      "sequence": "1",
+      "name": "Hello",
+      "type": "say",
+      "description": "A state to say hello world.",
+      "audio": {
+        "source": "/media/audio?message=hello-world&voice=default",
+        "text": "Hello World!"
+      }
+    }
+  ]
+}
+

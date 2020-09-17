@@ -1,9 +1,8 @@
 require 'json'
 
 class Gvg::Parser
-  def parse
-    automaton = File.read('test/state-machine-1.json')
-    return JSON.parse(automaton)
+  def parse(filename)
+    return JSON.parse(File.read(filename))
   end
 end
 
