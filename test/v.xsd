@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:a="ns_a" xmlns:b="ns_b">
+	<xsd:import namespace="ns_a" schemaLocation="a.xsd"/>
+	<xsd:import namespace="ns_b" schemaLocation="b.xsd"/>
+
+  <xsd:element name="var">
+    <xsd:complexType>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+	<xsd:element name="vxml">
+	  <xsd:complexType>
+	    <xsd:choice maxOccurs="unbounded">
+	      <xsd:element name="foo" type="b:BarType" />
+	      <xsd:element ref="var" />
+	    </xsd:choice>
+      <xsd:attribute name="version" type="xsd:string" use="required"/>
+	  </xsd:complexType>
+	</xsd:element>
+</xsd:schema>

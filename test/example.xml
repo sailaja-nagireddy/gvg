@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<vxml version="2.1">
+  <var name="name"></var>
+  <foo>Hello World</foo>
+</vxml>

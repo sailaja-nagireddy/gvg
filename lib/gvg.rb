@@ -4,4 +4,5 @@ end
 require 'gvg/agnot'
 require 'gvg/cli'
 require 'gvg/hello'
-require 'gvg/parser'
+require 'gvg/helper'
+require 'gvg/processor'

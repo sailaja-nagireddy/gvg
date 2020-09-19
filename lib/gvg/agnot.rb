@@ -4,10 +4,12 @@ require 'nokogiri'
 def audio(audio)
   parent = @builder.doc.at('vxml')
   builder = Nokogiri::XML::Builder.with(parent) do |xml|
-    xml.block do
-      xml.prompt do
-        xml.audio(src: audio['source']) do
-          xml.text(audio['text'])
+    xml.form do
+      xml.block do
+        xml.prompt do
+          xml.audio(src: audio['source']) do
+            xml.text(audio['text'])
+          end
         end
       end
     end
@@ -18,7 +20,7 @@ end
 
 def open
   @builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
-    xml.vxml(version: 2.0, lang: 'en')
+    xml.vxml(version: 2.0)
   end
 end
 

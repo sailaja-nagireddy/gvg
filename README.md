@@ -42,7 +42,7 @@ gvg help generate
 - [x] Read filename from the command line.
 - [x] Test gemmified version.
 - [x] Publish version 0.0.2 of the gem.
-- [ ] Validate generated vxml.
+- [x] Validate generated vxml.
 - [ ] Write tests.
 - [ ] Write to destination filename.
 - [ ] Add listen state.

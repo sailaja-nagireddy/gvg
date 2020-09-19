@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<vxml version="2.0" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD VOICEXML 2.1//EN" "http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.dtd">
+<vxml version="2.1">
   <form>
     <block>
       <prompt bargein="false">Welcome to Travel Planner!
@@ -8,4 +9,3 @@
     </block>
   </form>
 </vxml>
-
