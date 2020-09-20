@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'gvg'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.executables << 'gvg'
   s.date        = '2020-09-12'
   s.summary     = "Generic VoiceXML Generator"
@@ -12,7 +12,8 @@ Gem::Specification.new do |s|
     "lib/gvg/cli.rb",
     "lib/gvg/hello/translator.rb",
     "lib/gvg/hello.rb",
-    "lib/gvg/parser.rb",
+    "lib/gvg/helper.rb",
+    "lib/gvg/processor.rb",
     "lib/gvg.rb",
     "resources/404.json",
     "resources/hello.json"

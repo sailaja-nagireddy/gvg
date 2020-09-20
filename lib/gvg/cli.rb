@@ -20,6 +20,8 @@ class Gvg::Cli < Thor
     source = options[:source] || defaults[:source]
     source = File.file?(source) ? source : notfound
 
+    destination = options[:destination] || defaults[:destination]
+
     automaton = Gvg::Processor.parse(source)
 
     agnot = Gvg::Agnot.new
@@ -28,7 +30,7 @@ class Gvg::Cli < Thor
     for state in states
       agnot.send(state['type'], state['audio'])
     end
-    agnot.stop
+    agnot.stop(destination)
   end
 
   desc "validate OPTIONS", "Validates VoiceXML from a given source file."

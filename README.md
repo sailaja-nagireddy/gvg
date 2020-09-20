@@ -27,7 +27,7 @@ git clone git@github.com:sailaja-nagireddy/gvg.git
 
 ```
 gvg --help
-gvg generate --source test/hello.json
+gvg generate --source test/raw/hello.json
 gvg help generate
 ```
 
@@ -39,14 +39,14 @@ gvg help generate
 ## todo
 
 - [x] Update readme file.
-- [x] Read filename from the command line.
 - [x] Test gemmified version.
-- [x] Publish version 0.0.2 of the gem.
-- [x] Validate generated vxml.
-- [ ] Write tests.
-- [ ] Write to destination filename.
+- [ ] Publish version 0.0.3 of the gem.
+- [ ] Print gem version upon `gvg --version`.
+- [ ] Implement auto versioning.
+- [ ] Write tests for state machine.
 - [ ] Add listen state.
 - [ ] Add do/work/perform state.
+- [ ] Add more tests.
 
 
 ## versioning

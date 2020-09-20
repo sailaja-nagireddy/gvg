@@ -24,8 +24,8 @@ def open
   end
 end
 
-def close
-  puts @builder.to_xml
+def close(filename)
+  File.write(filename, @builder.to_xml)
 end
 
 class Gvg::Agnot
